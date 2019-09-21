@@ -3,16 +3,6 @@ variable "aws_region" {
     default = "us-east-1"
 }
 
-variable "aws_profile" {
-    type = "string"
-    default = "terraform"
-}
-
-variable "aws_credentials_path" {
-    type    = "string"
-    default = "~/.aws/credentials"
-}
-
 
 variable "domain_name" {
     type = "string"
