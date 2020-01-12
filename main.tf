@@ -22,3 +22,6 @@ resource "aws_api_gateway_base_path_mapping" "test" {
   api_id      = var.agtw_id
   stage_name  = var.agtw_stage_name
   domain_name = aws_api_gateway_domain_name.api.domain_name
+
+
+}
