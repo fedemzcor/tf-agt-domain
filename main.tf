@@ -6,7 +6,7 @@ resource "aws_api_gateway_domain_name" "api" {
 # Example DNS record using Route53.
 # Route53 is not specifically required; any DNS host can be used.
 resource "aws_route53_record" "api" {
-  depends_on = ["aws_api_gateway_domain_name.api"]
+  depends_on = [aws_api_gateway_domain_name.api]
   name    = aws_api_gateway_domain_name.api.domain_name
   type    = "A"
   zone_id = var.zone_id
