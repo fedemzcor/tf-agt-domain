@@ -1,21 +1,10 @@
 
-variable "domain_name" {
-    type = "string"
-    
-}
-variable "certificate_arn" {
-    type = "string"
-}
+variable "domain_name" {}
+variable "certificate_arn" {}
+   
 
-variable "zone_id"  {
-    type = "string"
-}
+variable "zone_id"  {}
 
-variable "agtw_id" {
-    type = "string"
-}
+variable "agtw_id" {}
 
-variable "agtw_stage_name" {
-    type = "string"
-}
-
+variable "agtw_stage_name" {}
