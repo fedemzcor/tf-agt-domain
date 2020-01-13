@@ -18,7 +18,7 @@ resource "aws_route53_record" "api" {
   }
 }
 
-resource "aws_api_gateway_base_path_mapping" "test" {
+resource "aws_api_gateway_base_path_mapping" "stage_mapping" {
   api_id      = var.agtw_id
   stage_name  = var.agtw_stage_name
   domain_name = aws_api_gateway_domain_name.api.domain_name
